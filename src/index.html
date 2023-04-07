@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Clicker Game</h1>
+      <div id="register">
+        <h2>Register</h2>
+        <form class="form">
+          <label class="label" for="name">Name:</label>
+          <input class="input" type="text" id="name" name="name" />
+          <br />
+          <label class="label" for="email">Email:</label>
+          <input class="input" type="email" id="email" name="email" />
+          <br />
+          <button class="button" type="submit" id="registrationBtn" onclick="submit()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
