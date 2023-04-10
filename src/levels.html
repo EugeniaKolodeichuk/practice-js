@@ -10,16 +10,23 @@
   <body>
     <div class="container">
       <h1>Clicker Game</h1>
-      <p>Click the button to earn points!</p>
+      <p id="greeting"></p>
+      <p>Click the hero to kill him and increase your score!</p>
       <div id="clicker">
-        <button id="clickBtn">Click me!</button>
         <p id="score">Score: 0</p>
       </div>
       <div id="level">
         <p>Level: 1</p>
+        <img id="level-image" src="./assets/level1.png" height="500px" />
       </div>
       <div id="register"></div>
     </div>
-    <script src="./levels.js"></script>
+    <div id="modal-container">
+      <div id="modal-message">
+        <img src="./assets/next.png" width="500px" />
+      </div>
+      <button id="modal-close-btn" class="button">Continue fighting!</button>
+    </div>
+    <script src="./scripts/levels.js"></script>
   </body>
 </html>
