@@ -11,8 +11,8 @@
     <div class="container">
       <h1>Clicker Game</h1>
       <div id="register">
-        <h2>Register</h2>
-        <form class="form">
+        <h2>Registration</h2>
+        <form id="form" class="form">
           <label class="label" for="name">Name:</label>
           <input class="input" type="text" id="name" name="name" required />
           <br />
@@ -21,10 +21,28 @@
           <br />
           <button class="button" type="submit" id="registrationBtn">Submit</button>
         </form>
+        <img src="./assets/start.png" width="100%" />
       </div>
-      <img src="./assets/start.png" width="100%" />
+      <div id="game">
+        <p id="greeting"></p>
+        <p>Click the hero to kill him and increase your score!</p>
+        <div id="clicker">
+          <p id="score">Score: 0</p>
+          <p id="health"></p>
+        </div>
+        <div id="level">
+          <p>Level: 1</p>
+          <img id="level-image" src="./assets/level1.png" height="500px" />
+        </div>
+      </div>
     </div>
-
-    <script src="./scripts/index.js"></script>
+    <div id="modal-container">
+      <div id="modal-message">
+        <img src="./assets/next.png" width="500px" />
+        <button id="modal-close-btn" class="button">Continue fighting!</button>
+      </div>
+    </div>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/game.js"></script>
   </body>
 </html>
