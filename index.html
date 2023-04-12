@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clicker Heroes</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Clicker Game</h1>
+      <div id="register">
+        <form id="form">
+          <h2>Registration</h2>
+          <label class="label" for="name">Name:</label>
+          <input class="input" type="text" id="name" name="name" required />
+          <br />
+          <label class="label" for="email">Email:</label>
+          <input class="input" type="email" id="email" name="email" required />
+          <br />
+          <button class="button" type="submit" id="registrationBtn">Submit</button>
+        </form>
+        <img src="./assets/start.png" />
+      </div>
+      <div id="game">
+        <h2 id="greeting"></h2>
+        <p class="info">Click the hero to increase your score!</p>
+        <div id="level">
+          <p>Level: 1</p>
+          <img id="level-image" src="./assets/level1.png" />
+        </div>
+        <div id="clicker">
+          <p id="score">Score: 0</p>
+          <p id="health"></p>
+        </div>
+      </div>
+      <div id="congratulation">
+        <img src="./assets/win.png" />
+        <p></p>
+      </div>
+    </div>
+    <div id="modal-container">
+      <div id="modal-message">
+        <img src="./assets/next.png" width="500px" />
+        <button id="modal-close-btn" class="button">Continue fighting!</button>
+      </div>
+    </div>
+    <script src="./scripts/form.js"></script>
+    <script src="./scripts/game.js"></script>
+  </body>
+</html>
